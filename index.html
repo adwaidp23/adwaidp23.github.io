@@ -3,97 +3,145 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Adwaid | Portfolio</title>
+  <title>Adwaid P Portfolio</title>
   <link rel="stylesheet" href="css/styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  crossorigin="anonymous"
+  />
   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
   <script>
-    (function(){
-      emailjs.init("YjgP4YPNEQC9RyhtZ");
-    })();
-  </script>
+  (function(){
+     emailjs.init("YjgP4YPNEQC9RyhtZ");
+  })();
+</script>
+
 </head>
 <body>
-  <!-- Fixed Navigation -->
-  <nav class="navbar">
-    <div class="nav-brand">Adwaid P</div>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="assets/resume.pdf" download class="resume-btn">Resume</a></li>
-    </ul>
-  </nav>
 
-  <!-- Fixed Navigation -->
-  <nav class="navbar">
-    <div class="nav-brand">Adwaid P</div>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="assets/resume.pdf" download class="resume-btn">Resume</a></li>
-    </ul>
-  </nav>
+  <!-- Header Section -->
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">Adwaid P</span></h1>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-  <div class="info-card">
-    <div class="info-row">
-      <div class="info-label">Name</div>
-      <div class="info-value"><strong>Adwaid P</strong></div>
-      <div class="info-label">Phone</div>
-      <div class="info-value"><strong>+91-80758-01015</strong></div>
-    </div>
-    <div class="info-row">
-      <div class="info-label">Age</div>
-      <div class="info-value"><strong>21 Years</strong></div>
-      <div class="info-label">Email</div>
-      <div class="info-value"><strong>adwaidp08@gmail.com</strong></div>
-    </div>
-    <div class="info-row">
-      <div class="info-label">Qualification</div>
-      <div class="info-value"><strong>Degree(BCA)</strong></div>
-      <div class="info-label">Nationality</div>
-      <div class="info-value"><strong>Indian</strong></div>
-    </div>
-  </div>
-
-  <!-- Portfolio Section -->
-  <section id="portfolio" class="section portfolio-section">
-    <h2>Projects</h2>
-    <div class="projects-grid">
-      <!-- Example Project Card -->
-      <div class="project-card">
-        <img src="assets/project1.jpeg" alt="Project 1" class="project-image">
-        <div class="project-info">
-          <h3>Project Title</h3>
-          <p>Short description of the project goes here. Highlight your role and technologies used.</p>
-          <a href="https://github.com/yourusername/project1" target="_blank" class="project-link">View Project</a>
-        </div>
-      </div>
-      <!-- Add more project cards as needed -->
+  <!-- Hero Section -->
+  <section id="home" class="hero fade-in">
+    <div class="hero-text">
+      <h2>Hello, I’m <span>Adwaid P</span></h2>
+      <p>MCA Student & Aspiring Data Scientist</p>
+      <a href="files/resume.pdf" download class="btn">Download Resume</a>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="section contact-section">
+  <!-- About Section -->
+  <section id="about" class="about slide-in">
+    <div class="container">
+      <img src="assets/profile.jpeg" alt="Profile Photo" class="profile-pic">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>I’m a passionate MCA student interested in Artificial Intelligence, Web Development, and Creative Coding. I love building clean, impactful, and interactive web applications.</p>
+      </div>
+    </div>
+  </section>
+  <section class="details-card">
+  <div class="details-grid">
+    <div>
+      <span class="details-label">Name</span>
+      <div class="details-value">Adwaid P</div> <!-- Use your name -->
+    </div>
+    <div>
+      <span class="details-label">Phone</span>
+      <div class="details-value">+91-80758-01015</div> <!-- Masked or leave blank -->
+    </div>
+    <div>
+      <span class="details-label">Age</span>
+      <div class="details-value">21 Years</div> <!-- Update your age -->
+    </div>
+    <div>
+      <span class="details-label">Email</span>
+      <div class="details-value">adwaidp08@gmail.com</div> <!-- Use your email -->
+    </div>
+    <div>
+      <span class="details-label">Occupation</span>
+      <div class="details-value">Student</div>
+    </div>
+    <div>
+      <span class="details-label">Nationality</span>
+      <div class="details-value">Indian</div>
+    </div>
+  </div>
+</section>
+
+  <!-- Skills Section -->
+<section id="skills" class="skills fade-in">
+  <h2 class="skills-heading">Skills</h2>
+  <div class="container">
+    <div class="skills-grid">
+      <div class="skill-card">HTML</div>
+      <div class="skill-card">CSS</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">Python</div>
+      <div class="skill-card">AI & ML</div>
+      <!-- Add more skills as needed -->
+    </div>
+  </div>
+</section>
+
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects slide-in">
+    <h2>Projects</h2>
+    <div class="container">
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>AI Chatbot</h3>
+          <p>Built a conversational assistant using Python and NLP models.</p>
+        </div>
+        <div class="project-card">
+          <h3>Portfolio Website</h3>
+          <p>Designed this minimalist, interactive portfolio layout using HTML, CSS, and JS.</p>
+        </div>
+        <div class="project-card">
+          <h3>Student Tracker</h3>
+          <p>Developed a web app to track study progress and visualize course analytics.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+    <section id="contact" class="section contact-section">
     <div class="form-container">
       <h2>Contact Me</h2>
-      <form id="contactForm">
+      <form id="contactForm" action="https://formspree.io/f/mwpryjar" method="POST">
+        <input type="hidden" name="_subject" value="New message from portfolio site">
         <label for="name">Name</label>
         <input type="text" name="name" id="name" required>
         <label for="email">Email</label>
-        <input type="email" name="email" id="email" required>
+        <input type="email" name="_replyto" id="email" required>
         <label for="message">Message</label>
         <textarea name="message" id="message" required></textarea>
         <div class="form-actions">
-          <button type="submit">Send</button>
+          <button type="submit" id="contactSubmit">Send</button>
           <div id="formStatus" role="status" aria-live="polite"></div>
         </div>
       </form>
     </div>
   </section>
 
+  <!-- Footer -->
+  <footer class="footer">
   <section>
     <div class="social-buttons">
       <a href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BM2aZGSbaQN6hnW1YMRM9Ig%3D%3D" class="social-btn linkedin" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
@@ -103,33 +151,8 @@
       <a href="https://facebook.com/Adwaid P" class="social-btn facebook" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
     </div>
   </section>
+  </footer>
 
-  <script>
-    // EmailJS form submission
-    document.getElementById('contactForm').addEventListener('submit', function(event) {
-      event.preventDefault();
-      var status = document.getElementById('formStatus');
-      status.textContent = "Sending...";
-      emailjs.sendForm('service_cqrk12s', 'template_4t4b9uv', this)
-        .then(function() {
-          status.style.color = "var(--accent)";
-          status.textContent = "Message sent successfully!";
-        }, function(error) {
-          status.style.color = "#e74c3c";
-          status.textContent = "Failed to send message. Please try again.";
-        });
-    });
-
-    // Dark mode toggle
-    const darkToggle = document.getElementById('darkModeToggle');
-    darkToggle.addEventListener('click', function() {
-      document.body.classList.toggle('dark-mode');
-      darkToggle.innerHTML = document.body.classList.contains('dark-mode')
-        ? '<i class="fas fa-sun"></i>'
-        : '<i class="fas fa-moon"></i>';
-    });
-  </script>
-  <script src="js/main.js"></script>
-  <script src="js/contact.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
