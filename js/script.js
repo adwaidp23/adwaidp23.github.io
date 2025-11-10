@@ -1,92 +1,135 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Mobile navigation menu toggle
-  const menuToggle = document.querySelector('.menu-toggle');
-  const navMenu = document.querySelector('.nav-menu');
+    // 0. EmailJS Initialization (if not done in HTML)
+    // If you haven't initialized EmailJS in your HTML script tag, you can do it here:
+    // emailjs.init('YjgP4YPNEQC9RyhtZ'); // Your EmailJS Public Key
 
-  if (menuToggle && navMenu) {
-    menuToggle.addEventListener('click', () => {
-      navMenu.classList.toggle('active');
-    });
-  }
-
-  // IntersectionObserver for animations
-  const observerOptions = {
-    threshold: 0.1
-  };
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      }
-    });
-  }, observerOptions);
-
-  // Observe all sections
-  document.querySelectorAll('section').forEach(section => {
-    observer.observe(section);
-  });
-
-  // Contact form handling — show a popup (toast) instead of redirecting
-  const form = document.getElementById('contactForm');
-  if (form) {
-    const submitBtn = document.getElementById('contactSubmit');
-
-    function showToast(message, success = true) {
-      const toast = document.createElement('div');
-      toast.setAttribute('role', 'status');
-      toast.style.position = 'fixed';
-      toast.style.left = '50%';
-      toast.style.bottom = '24px';
-      toast.style.transform = 'translateX(-50%)';
-      toast.style.background = success ? 'linear-gradient(90deg,#2ecc71,#27ae60)' : 'linear-gradient(90deg,#ff6b6b,#e74c3c)';
-      toast.style.color = '#fff';
-      toast.style.padding = '12px 18px';
-      toast.style.borderRadius = '8px';
-      toast.style.boxShadow = '0 6px 20px rgba(0,0,0,0.12)';
-      toast.style.fontWeight = '600';
-      toast.style.zIndex = '2000';
-      toast.style.maxWidth = '90%';
-      toast.style.textAlign = 'center';
-      toast.textContent = message;
-
-      document.body.appendChild(toast);
-      setTimeout(() => {
-        toast.style.transition = 'opacity 250ms ease, transform 250ms ease';
-        toast.style.opacity = '0';
-        toast.style.transform = 'translateX(-50%) translateY(8px)';
-      }, 2200);
-      setTimeout(() => toast.remove(), 2500);
+    // 1. Dynamic Copyright Year
+    const currentYearSpan = document.getElementById('current-year');
+    if (currentYearSpan) {
+        currentYearSpan.textContent = new Date().getFullYear();
     }
 
-    form.addEventListener('submit', async function (e) {
-      e.preventDefault();
-      if (!form.checkValidity()) return;
+    const currentYearFullSpan = document.getElementById('current-year-full');
+    if (currentYearFullSpan) {
+        currentYearFullSpan.textContent = new Date().getFullYear();
+    }
 
-      if (submitBtn) {
-        submitBtn.disabled = true;
-        var originalText = submitBtn.textContent;
-        submitBtn.textContent = 'Sending…';
-      }
+    // 2. Scroll Animation Logic (IntersectionObserver)
+    const observerOptions = {
+        threshold: 0.1 // Trigger when 10% of the element is visible
+    };
 
-      const formData = new FormData(form);
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target); // Stop observing once visible
+            }
+        });
+    }, observerOptions);
 
-      try {
-        const response = await emailjs.sendForm('service_cqrk12s', 'template_j8j4ezj', form, 'YjgP4YPNEQC9RyhtZ');
-        if (response.status === 200) {
-          showToast('Message sent — thank you!', true);
-          form.reset();
-        } else {
-          showToast('Failed to send message. Please try again.', false);
-        }
-      } catch (err) {
-        console.error('Contact form error:', err);
-        showToast('Network error. Check your connection.', false);
-      } finally {
-        if (submitBtn) {
-          submitBtn.disabled = false;
-          submitBtn.textContent = originalText;
-        }
-      }
+    document.querySelectorAll('.fade-in, .slide-in').forEach(el => {
+        observer.observe(el);
     });
-  }
+
+    // 3. Active Navigation Link Highlighting
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-menu a');
+
+    // Function to update active link
+    const updateActiveNavLink = () => {
+        let currentSectionId = '';
+        sections.forEach(section => {
+            // Calculate a more robust trigger point (e.g., 20% from top of viewport)
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            // Check if scroll position is within the section, slightly adjusted
+            if (window.pageYOffset >= sectionTop - window.innerHeight * 0.3 && 
+                window.pageYOffset < sectionTop + sectionHeight - window.innerHeight * 0.3) {
+                currentSectionId = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(a => {
+            a.classList.remove('active');
+            // Ensure href exists and check for both #id and index.html#id patterns
+            const href = a.getAttribute('href');
+            if (href && (href === `#${currentSectionId}` || href.endsWith(`#${currentSectionId}`))) {
+                a.classList.add('active');
+            } else if (window.location.pathname.includes('projects-full.html') && href && href.includes('#projects')) {
+                // Special handling for the Projects link on the full projects page
+                a.classList.add('active');
+            }
+        });
+    };
+
+    // Initial check and on scroll
+    updateActiveNavLink(); // Call once on load
+    window.addEventListener('scroll', updateActiveNavLink);
+    window.addEventListener('resize', updateActiveNavLink); // Also update on resize if layout shifts
+
+
+    // 4. Mobile Navigation Toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+
+    if (navToggle && navMenu) {
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('is-open');
+            navToggle.classList.toggle('active'); // For burger icon animation
+            const expanded = navToggle.classList.contains('active');
+            navToggle.setAttribute('aria-expanded', expanded);
+        });
+
+        // Close nav menu when a link is clicked (for single-page navigation)
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (navMenu.classList.contains('is-open')) {
+                    navMenu.classList.remove('is-open');
+                    navToggle.classList.remove('active');
+                    navToggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+        });
+    }
+
+    // 5. Contact Form Submission (Using EmailJS)
+    const form = document.getElementById('contactForm');
+    const formStatus = document.getElementById('formStatus');
+
+    if (form) {
+        const serviceID = 'service_cqrk12s';    // Your EmailJS Service ID
+        const templateID = 'template_4t4b9uv';  // Your EmailJS Template ID
+        const publicKey = 'YjgP4YPNEQC9RyhtZ'; // Your EmailJS Public Key (redundant if initialized, but safe)
+
+        form.addEventListener('submit', async (event) => {
+            event.preventDefault(); // Prevent default form submission
+            formStatus.textContent = 'Sending...';
+            formStatus.classList.remove('form-status-success', 'form-status-error'); // Clear previous status styles
+            
+            try {
+                const response = await emailjs.sendForm(serviceID, templateID, form, publicKey);
+
+                if (response.status === 200) { 
+                    formStatus.textContent = 'Message Sent Successfully! ✅';
+                    formStatus.classList.add('form-status-success');
+                    form.reset();
+                } else {
+                    formStatus.textContent = 'Oops! There was an issue sending the email. ❌';
+                    formStatus.classList.add('form-status-error');
+                }
+
+            } catch (error) {
+                formStatus.textContent = `Error: ${error.text || 'Network problem or configuration issue.'} 🌐`;
+                formStatus.classList.add('form-status-error');
+                console.error('EmailJS Submission Error:', error);
+            }
+
+            // Clear status after a few seconds
+            setTimeout(() => {
+                formStatus.textContent = '';
+                formStatus.classList.remove('form-status-success', 'form-status-error');
+            }, 7000); // Increased timeout for better readability
+        });
+    }
 });
