@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demand Forecasting Case Study | Adwaid P</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=DM+Sans:wght@400;500;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=DM+Sans:wght@400;500;700&display=swap" /></noscript>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/styles.css" />
+
+    <meta name="description" content="Case study for a time-series demand forecasting system using ARIMA and Prophet models." />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://adwaidp23.github.io/portfolio/projects/demand-forecasting.html" />
+    <meta property="og:title" content="Demand Forecasting Case Study | Adwaid P" />
+    <meta property="og:description" content="How a demand forecasting pipeline was built with ARIMA, Prophet, and error-metric evaluation." />
+    <meta property="og:image" content="https://adwaidp23.github.io/portfolio/assets/profile.jpeg" />
+    <meta property="og:url" content="https://adwaidp23.github.io/portfolio/projects/demand-forecasting.html" />
+    <meta property="og:type" content="article" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Demand Forecasting Case Study | Adwaid P" />
+    <meta name="twitter:description" content="End-to-end breakdown of the demand forecasting project." />
+    <meta name="twitter:image" content="https://adwaidp23.github.io/portfolio/assets/profile.jpeg" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Demand Forecasting System using Time Series AI",
+      "author": {
+        "@type": "Person",
+        "name": "Adwaid P"
+      },
+      "url": "https://adwaidp23.github.io/portfolio/projects/demand-forecasting.html",
+      "about": ["Time Series", "ARIMA", "Prophet", "Forecasting"]
+    }
+    </script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo"><a href="../index.html">Adwaid <span>P</span></a></h1>
+            <nav aria-label="Main navigation">
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="../index.html#home">Home</a></li>
+                    <li><a href="../index.html#projects" class="active">Projects</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+                <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="burger-icon"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="projects fade-in">
+            <div class="container case-study">
+                <div class="back-link-container">
+                    <a href="../index.html#projects" class="back-btn" aria-label="Back to featured projects"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+                </div>
+
+                <h2>Demand Forecasting Case Study</h2>
+                <p class="case-lead">An end-to-end forecasting system built to predict future sales and improve inventory planning with trend and seasonality awareness.</p>
+
+                <article class="case-block">
+                    <h3>Problem</h3>
+                    <p>Manual planning caused delayed inventory decisions and weak visibility into demand spikes and seasonal drops.</p>
+                </article>
+
+                <article class="case-block">
+                    <h3>Tech Stack</h3>
+                    <ul class="project-points">
+                        <li>Python, Pandas, NumPy for data preprocessing</li>
+                        <li>ARIMA and Prophet for time-series forecasting</li>
+                        <li>Matplotlib/Seaborn for diagnostics and forecast visualization</li>
+                        <li>MAE and RMSE for performance validation</li>
+                    </ul>
+                </article>
+
+                <article class="case-block">
+                    <h3>Approach</h3>
+                    <ul class="project-points">
+                        <li>Performed exploratory time-series analysis to identify trend and seasonal components</li>
+                        <li>Engineered lag features and rolling averages for stability</li>
+                        <li>Trained and compared ARIMA and Prophet across validation windows</li>
+                        <li>Selected best-performing model using error metrics and consistency checks</li>
+                    </ul>
+                </article>
+
+                <article class="case-block">
+                    <h3>Results</h3>
+                    <ul class="project-points">
+                        <li>Produced clearer demand projections for short-term planning</li>
+                        <li>Reduced forecasting error compared with baseline estimates</li>
+                        <li>Enabled data-driven planning decisions for inventory workflows</li>
+                    </ul>
+                </article>
+
+                <article class="case-block">
+                    <h3>Challenges and Solutions</h3>
+                    <ul class="project-points">
+                        <li>Handled noisy series with smoothing and outlier review</li>
+                        <li>Managed seasonal shifts through model comparison and tuning</li>
+                        <li>Improved feature quality using lag/rolling engineering</li>
+                    </ul>
+                </article>
+
+                <article class="case-block">
+                    <h3>Project Links</h3>
+                    <div class="case-actions">
+                        <a href="https://github.com/adwaidp23/Market-Data-Analytics" class="btn" target="_blank" rel="noopener noreferrer" aria-label="Open demand forecasting repository">
+                            <i class="fab fa-github"></i> GitHub Repository
+                        </a>
+                        <a href="../projects/" class="btn btn-ghost" aria-label="View all projects">View All Projects</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" aria-label="Footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Adwaid P. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

@@ -5,33 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adwaid P | Portfolio</title>
 
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"></noscript>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=DM+Sans:wght@400;500;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=DM+Sans:wght@400;500;700&display=swap" /></noscript>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/styles.css" />
 
-    <meta name="description" content="Portfolio of Adwaid P, MCA student passionate about Data Science, AI, and Web Development. Explore projects in Python, AI, ML, HTML, CSS, JavaScript, and more." />
-    <meta name="keywords" content="Adwaid P, Portfolio, Data Science, AI, Artificial Intelligence, Web Development, MCA Student, Python, Machine Learning, HTML, CSS, JavaScript" />
+    <meta name="description" content="Portfolio of Adwaid P, MCA student passionate about Data Science, AI, and Web Development." />
+    <meta name="keywords" content="Adwaid P, Portfolio, Data Science, AI, Web Development, MCA Student, Python, Machine Learning" />
     <meta name="author" content="Adwaid P" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#0b1220" />
+    <link rel="canonical" href="https://adwaidp23.github.io/portfolio/" />
     <meta property="og:title" content="Adwaid P | Portfolio" />
     <meta property="og:description" content="Portfolio of Adwaid P, MCA student passionate about Data Science, AI, and Web Development." />
-    <meta property="og:image" content="https://yourdomain.com/assets/profile.jpeg" /> <meta property="og:url" content="https://yourdomain.com/" /> <meta name="twitter:card" content="summary_large_image" />
-
+    <meta property="og:image" content="https://adwaidp23.github.io/portfolio/assets/profile.jpeg" />
+    <meta property="og:url" content="https://adwaidp23.github.io/portfolio/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Adwaid P | Portfolio" />
+    <meta name="twitter:description" content="Portfolio of Adwaid P focused on Data Science, AI, and Web Development projects." />
+    <meta name="twitter:image" content="https://adwaidp23.github.io/portfolio/assets/profile.jpeg" />
 
     <link rel="icon" href="assets/favicon.png" type="image/png" />
-    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png"> </head>
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Adwaid P",
+      "url": "https://adwaidp23.github.io/portfolio/",
+      "image": "https://adwaidp23.github.io/portfolio/assets/profile.jpeg",
+      "jobTitle": "MCA Student",
+      "sameAs": [
+        "https://www.linkedin.com/in/adwaid-p-98354a322/",
+        "https://github.com/adwaidp23",
+        "https://instagram.com/a_dwai_d"
+      ]
+    }
+    </script>
+</head>
 
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <header class="navbar">
         <div class="container">
-            <h1 class="logo"><a href="#home">Adwaid <span>P</span></a></h1> 
+            <h1 class="logo"><a href="#home">Adwaid <span>P</span></a></h1>
             <nav aria-label="Main navigation">
-                <ul class="nav-menu">
+                <ul class="nav-menu" id="nav-menu">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#education">Education</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -43,37 +71,70 @@
         </div>
     </header>
 
+    <main id="main-content">
     <section id="home" class="hero fade-in" role="banner">
-        <div class="hero-text">
-            <h2>Hello, I’m <span>Adwaid P</span></h2>
-            <p>MCA Student & Aspiring Data Scientist</p>
-            <a href="files/resume.pdf" download="Adwaid_P_Resume.pdf" class="btn" aria-label="Download Adwaid P's Resume">Download Resume</a>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <p class="eyebrow">Data Science + Web Engineering</p>
+                <h2>Hello, I am <span>Adwaid P</span></h2>
+                <p class="hero-lead">MCA student building useful AI-powered experiences with clean code, strong UX, and practical machine learning workflows.</p>
+                <div class="hero-actions">
+                    <a href="assets/resume.pdf" download="Adwaid_P_Resume.pdf" class="btn" aria-label="Download Adwaid P resume">Download Resume</a>
+                    <a href="#projects" class="btn btn-ghost" aria-label="View projects">View Projects</a>
+                </div>
+                <div class="hero-highlights" aria-label="Highlights">
+                    <div class="stat-card">
+                        <span class="stat-value">10+</span>
+                        <span class="stat-label">Projects Built</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-value">4+</span>
+                        <span class="stat-label">Core Domains</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-value">2</span>
+                        <span class="stat-label">Degrees in Progress & Completed</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual" aria-hidden="true">
+                <div class="hero-orb orb-one"></div>
+                <div class="hero-orb orb-two"></div>
+                <div class="hero-orb orb-three"></div>
+            </div>
         </div>
     </section>
 
     <section id="about" class="about slide-in" aria-labelledby="about-heading">
-        <div class="container">
-            <img src="assets/profile.jpeg" alt="Adwaid P - Profile Photo" class="profile-pic" loading="lazy" />
+        <div class="container about-grid">
+            <img src="assets/profile.jpeg" alt="Adwaid P profile photo" class="profile-pic" loading="lazy" />
             <div class="about-text">
                 <h2 id="about-heading">About Me</h2>
                 <p>
-                    I’m a passionate MCA student interested in Artificial Intelligence, Web Development, and Creative Coding.
-                    I love building clean, impactful, and interactive web applications.
+                    I am a passionate MCA student interested in artificial intelligence, web development, and creative coding.
+                    I love building clean, impactful, and interactive web applications that solve real problems.
                 </p>
+                <ul class="about-tags" aria-label="Focus areas">
+                    <li>Machine Learning</li>
+                    <li>Computer Vision</li>
+                    <li>Frontend Development</li>
+                    <li>Python Engineering</li>
+                </ul>
             </div>
         </div>
     </section>
 
     <section class="details-section" aria-labelledby="details-heading">
         <div class="container">
-            <h2 id="details-heading" class="visually-hidden">Personal Details</h2> <article class="info-card">
+            <h2 id="details-heading" class="visually-hidden">Personal Details</h2>
+            <article class="info-card">
                 <div class="info-item">
                     <span class="info-label">Name</span>
                     <span class="info-value">Adwaid P</span>
                 </div>
                 <div class="info-item">
                     <span class="info-label">Phone</span>
-                    <span class="info-value"><a href="tel:+918075801015">+91-80758-01015</a></span>
+                    <span class="info-value"><a href="tel:+918075801015">+91 80758 01015</a></span>
                 </div>
                 <div class="info-item">
                     <span class="info-label">Age</span>
@@ -100,15 +161,13 @@
         <div class="timeline">
             <div class="timeline-item">
                 <div class="timeline-marker">
-                    <div class="timeline-dot"><i class="fas fa-graduation-cap"></i></div> 
+                    <div class="timeline-dot"><i class="fas fa-graduation-cap"></i></div>
                 </div>
                 <div class="timeline-content">
-                    <span class="timeline-year">Aug 2025 – Present</span>
+                    <span class="timeline-year">Aug 2025 - Present</span>
                     <h3 class="timeline-title">Master of Computer Applications (MCA)</h3>
                     <h4 class="timeline-college">LEAD College Autonomous</h4>
-                    <p class="timeline-description">
-                        Focuses on Data Science, Web Technologies, and Advanced Algorithms.
-                    </p>
+                    <p class="timeline-description">Focused on data science, web technologies, and advanced algorithms.</p>
                 </div>
             </div>
             <div class="timeline-item">
@@ -116,12 +175,64 @@
                     <div class="timeline-dot"><i class="fas fa-university"></i></div>
                 </div>
                 <div class="timeline-content">
-                    <span class="timeline-year">2021 – 2024</span>
+                    <span class="timeline-year">2021 - 2024</span>
                     <h3 class="timeline-title">Bachelor of Computer Applications</h3>
                     <h4 class="timeline-college">College of Applied Science, Calicut</h4>
-                    <p class="timeline-description">
-                        Graduated with distinction. Focused on Programming and Database Management.
-                    </p>
+                    <p class="timeline-description">Graduated with distinction, with strong foundations in programming and database management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="certifications fade-in" aria-labelledby="certifications-heading">
+        <div class="container">
+            <h2 id="certifications-heading">Certifications</h2>
+            <div class="cert-marquee" aria-label="Certification cards carousel">
+                <div class="cert-track loop-track">
+                    <article class="cert-card">
+                        <h3>Certificate of Completion</h3>
+                        <p class="cert-issuer">Issuer: LinkedIn Learning</p>
+                        <p class="cert-code">Credential: ACF9C3C07C9E1040B1614A8F11854184...</p>
+                        <a href="https://www.linkedin.com/learning/certificates/acf9c3c07c9e1040b1614a8f11854184dff9794c1dc07fc44f177d59e01a2225" target="_blank" rel="noopener noreferrer" class="btn" aria-label="View LinkedIn Learning certificate">
+                            <i class="fas fa-certificate"></i> View Certificate
+                        </a>
+                    </article>
+
+                    <article class="cert-card">
+                        <h3>Python for Data Science, AI &amp; Development</h3>
+                        <p class="cert-issuer">Issuer: IBM (via Coursera)</p>
+                        <p class="cert-code">Credential: CE145JCG37ZF</p>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/CE145JCG37ZF" target="_blank" rel="noopener noreferrer" class="btn" aria-label="View Coursera certificate CE145JCG37ZF">
+                            <i class="fas fa-certificate"></i> View Certificate
+                        </a>
+                    </article>
+
+                    <article class="cert-card">
+                        <h3>Tools for Data Science</h3>
+                        <p class="cert-issuer">Issuer: IBM (via Coursera)</p>
+                        <p class="cert-code">Credential: WGR7Y79WISX1</p>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/WGR7Y79WISX1" target="_blank" rel="noopener noreferrer" class="btn" aria-label="View Coursera certificate WGR7Y79WISX1">
+                            <i class="fas fa-certificate"></i> View Certificate
+                        </a>
+                    </article>
+
+                    <article class="cert-card">
+                        <h3>What is Data Science?</h3>
+                        <p class="cert-issuer">Issuer: IBM (via Coursera)</p>
+                        <p class="cert-code">Credential: 2YGB8C3SQ0F5</p>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/2YGB8C3SQ0F5" target="_blank" rel="noopener noreferrer" class="btn" aria-label="View Coursera certificate 2YGB8C3SQ0F5">
+                            <i class="fas fa-certificate"></i> View Certificate
+                        </a>
+                    </article>
+
+                    <article class="cert-card">
+                        <h3>Data Science Methodology</h3>
+                        <p class="cert-issuer">Issuer: IBM (via Coursera)</p>
+                        <p class="cert-code">Credential: 5NGYC8CALY61</p>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/5NGYC8CALY61" target="_blank" rel="noopener noreferrer" class="btn" aria-label="View Coursera certificate 5NGYC8CALY61">
+                            <i class="fas fa-certificate"></i> View Certificate
+                        </a>
+                    </article>
                 </div>
             </div>
         </div>
@@ -132,92 +243,156 @@
         <div class="container">
             <div class="skills-grid">
                 <div class="skill-card-detailed">
-                    <h3>HTML</h3>
-                    <span class="skill-percentage">95%</span> 
-                    <div class="progress-bar-container">
-                        <div class="progress-bar" style="width: 95%;"></div>
-                    </div>
-                </div>
-                <div class="skill-card-detailed">
-                    <h3>CSS</h3>
-                    <span class="skill-percentage">85%</span>
-                    <div class="progress-bar-container">
-                        <div class="progress-bar" style="width: 85%;"></div>
-                    </div>
-                </div>
-                <div class="skill-card-detailed">
-                    <h3>JavaScript</h3>
-                    <span class="skill-percentage">75%</span>
-                    <div class="progress-bar-container">
-                        <div class="progress-bar" style="width: 75%;"></div>
-                    </div>
-                </div>
-                <div class="skill-card-detailed">
                     <h3>Python</h3>
-                    <span class="skill-percentage">90%</span>
-                    <div class="progress-bar-container">
-                        <div class="progress-bar" style="width: 90%;"></div>
-                    </div>
+                    <span class="skill-percentage">92%</span>
+                    <div class="progress-bar-container"><div class="progress-bar" style="width: 92%;"></div></div>
+                    <p class="skill-description">Used as the primary language across forecasting, IPL analytics, and recommendation system projects.</p>
                 </div>
                 <div class="skill-card-detailed">
-                    <h3>AI & ML</h3>
-                    <span class="skill-percentage">70%</span>
-                    <div class="progress-bar-container">
-                        <div class="progress-bar" style="width: 70%;"></div>
-                    </div>
+                    <h3>Data Science &amp; Analytics</h3>
+                    <span class="skill-percentage">88%</span>
+                    <div class="progress-bar-container"><div class="progress-bar" style="width: 88%;"></div></div>
+                    <p class="skill-description">Strengthened through IBM certification track and hands-on project workflows from data cleaning to insight generation.</p>
+                </div>
+                <div class="skill-card-detailed">
+                    <h3>Machine Learning &amp; AI</h3>
+                    <span class="skill-percentage">84%</span>
+                    <div class="progress-bar-container"><div class="progress-bar" style="width: 84%;"></div></div>
+                    <p class="skill-description">Applied in IPL price prediction and music recommendation models with feature engineering and tuning.</p>
+                </div>
+                <div class="skill-card-detailed">
+                    <h3>Time Series Forecasting</h3>
+                    <span class="skill-percentage">85%</span>
+                    <div class="progress-bar-container"><div class="progress-bar" style="width: 85%;"></div></div>
+                    <p class="skill-description">Built forecasting pipelines using ARIMA and Prophet for demand prediction with MAE/RMSE evaluation.</p>
+                </div>
+                <div class="skill-card-detailed">
+                    <h3>Data Visualization</h3>
+                    <span class="skill-percentage">82%</span>
+                    <div class="progress-bar-container"><div class="progress-bar" style="width: 82%;"></div></div>
+                    <p class="skill-description">Used Matplotlib and Seaborn to present model behavior, pricing trends, and forecasting insights clearly.</p>
+                </div>
+                <div class="skill-card-detailed">
+                    <h3>Web Development</h3>
+                    <span class="skill-percentage">80%</span>
+                    <div class="progress-bar-container"><div class="progress-bar" style="width: 80%;"></div></div>
+                    <p class="skill-description">Developed portfolio and privacy-focused web apps using HTML, CSS, JavaScript, and responsive UX principles.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="projects" class="projects slide-in" aria-labelledby="projects-heading">
-        <h2 id="projects-heading">Projects</h2>
+        <h2 id="projects-heading">Featured Projects</h2>
         <div class="container">
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3>Hand Gesture controlled musicplayer</h3>
-                    <p>BeatBuff is a gesture-controlled local music player that lets users play, pause, skip, and control volume using hand movements detected via webcam.
-It features a smooth, lag-free interface with real-time HUD overlays and responsive playback feedback.
-Built using Python, OpenCV, MediaPipe, and Pygame, it combines computer vision with interactive multimedia control..</p>
-                    <span class="tech-tags">Python, OpenCV, MediaPipe, Pygame</span>
-                    <a href="https://github.com/adwaidp23/BeatBuff" target="_blank" rel="noopener noreferrer" aria-label="View AI Chatbot project on GitHub">
-                        <i class="fab fa-github"></i> GitHub
-                    </a>
-                </div>
-                <!-- <div class="project-card">
-                    <h3>Portfolio Website</h3>
-                    <p>Designed this minimalist, interactive portfolio layout using HTML, CSS, and JS.</p>
-                    <span class="tech-tags">HTML, CSS, JavaScript, Responsive Design</span>
-                    <a href="https://github.com/adwaidp23/your-portfolio-repo" target="_blank" rel="noopener noreferrer" aria-label="View Portfolio Website project on GitHub">
-                        <i class="fab fa-github"></i> GitHub
-                    </a>
-                </div>
-                <div class="project-card">
-                    <h3>Student Tracker</h3>
-                    <p>Developed a web app to track study progress and visualize course analytics.</p>
-                    <span class="tech-tags">HTML, CSS, JavaScript, REST API</span>
-                    <a href="https://github.com/adwaidp23/student-tracker-repo" target="_blank" rel="noopener noreferrer" aria-label="View Student Tracker project on GitHub">
-                        <i class="fab fa-github"></i> GitHub
-                    </a>
-                </div> -->
-                </div>
+            <div class="project-marquee" aria-label="Featured projects carousel">
+                <div class="project-track loop-track">
+                    <div class="project-card">
+                        <h3>Demand Forecasting System using Time Series AI</h3>
+                        <p class="project-type">Data Science Project</p>
+                        <p>
+                            Developed an end-to-end demand forecasting system to predict future sales using ARIMA and Prophet models.
+                        </p>
+                        <ul class="project-points">
+                            <li>Conducted time series analysis to identify trends, seasonality, and anomalies</li>
+                            <li>Engineered lag features and rolling averages to improve performance</li>
+                            <li>Evaluated models using MAE and RMSE metrics</li>
+                        </ul>
+                        <span class="tech-tags">Python, ARIMA, Prophet, Time Series, Forecasting</span>
+                        <div class="project-actions">
+                            <a href="https://github.com/adwaidp23/Market-Data-Analytics" target="_blank" rel="noopener noreferrer" aria-label="View Demand Forecasting project on GitHub">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                            <a href="projects/demand-forecasting.html" aria-label="View demand forecasting case study">
+                                <i class="fas fa-file-lines"></i> View Case Study
+                            </a>
+                        </div>
+                    </div>
 
-            <!-- <div class="view-more-container">
-                <a href="projects-full.html" class="btn">View More Projects</a>
-            </div> -->
+                    <div class="project-card">
+                        <h3>AI-Powered IPL Auction Analysis &amp; Price Prediction System</h3>
+                        <p class="project-type">Data Science / Machine Learning Project</p>
+                        <p>
+                            Built a machine learning system to analyze IPL auction data, identify pricing patterns, and predict player valuations.
+                        </p>
+                        <ul class="project-points">
+                            <li>Performed EDA on player pricing trends and team spending patterns</li>
+                            <li>Engineered predictive features for modeling</li>
+                            <li>Visualized insights using Matplotlib and Seaborn</li>
+                        </ul>
+                        <span class="tech-tags">Python, EDA, Machine Learning, Matplotlib, Seaborn</span>
+                        <div class="project-actions">
+                            <a href="https://github.com/adwaidp23/ipl-data-science-project" target="_blank" rel="noopener noreferrer" aria-label="View IPL Auction Analysis project on GitHub">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                            <a href="projects/ipl-auction-analysis.html" aria-label="View IPL auction analysis case study">
+                                <i class="fas fa-file-lines"></i> View Case Study
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>BeatBuff - AI-Based Music Recommendation System</h3>
+                        <p class="project-type">Data Science / AI Project</p>
+                        <p>
+                            Built a recommendation system that analyzes user preferences and audio features to deliver personalized song suggestions.
+                        </p>
+                        <ul class="project-points">
+                            <li>Processed music datasets and extracted relevant audio features</li>
+                            <li>Implemented similarity-based recommendation algorithms</li>
+                            <li>Improved recommendation accuracy through model tuning</li>
+                        </ul>
+                        <span class="tech-tags">Python, Recommendation Systems, AI, Data Science</span>
+                        <div class="project-actions">
+                            <a href="https://github.com/adwaidp23/BeatBuff" target="_blank" rel="noopener noreferrer" aria-label="View BeatBuff project on GitHub">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                            <a href="projects/beatbuff.html" aria-label="View BeatBuff case study">
+                                <i class="fas fa-file-lines"></i> View Case Study
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Assent - Privacy-Focused Photo Sharing Web Application</h3>
+                        <p class="project-type">Academic Project</p>
+                        <p>
+                            Developed a privacy-focused web application enabling controlled photo sharing with identity-based access.
+                        </p>
+                        <ul class="project-points">
+                            <li>Designed secure authentication and access control workflows</li>
+                            <li>Applied data-driven logic for identity-based content visibility</li>
+                        </ul>
+                        <span class="tech-tags">Web App, Authentication, Access Control, Privacy</span>
+                        <div class="project-actions">
+                            <a href="https://github.com/adwaidp23/ipl-data-science-project" target="_blank" rel="noopener noreferrer" aria-label="View Assent project on GitHub">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                            <a href="projects/assent.html" aria-label="View Assent case study">
+                                <i class="fas fa-file-lines"></i> View Case Study
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="view-more-container">
+                <a href="projects/" class="btn">View More Projects</a>
+            </div>
         </div>
     </section>
 
     <section id="contact" class="section contact-section fade-in" aria-labelledby="contact-heading">
         <div class="form-container">
             <h2 id="contact-heading">Contact Me</h2>
-            <form id="contactForm"> <input type="hidden" name="_subject" value="New message from portfolio site" />
+            <form id="contactForm">
+                <input type="hidden" name="_subject" value="New message from portfolio site" />
                 <label for="name">Name</label>
-                <input type="text" name="name" id="name" required autocomplete="name" />
+                <input type="text" name="name" id="name" required autocomplete="name" minlength="2" />
                 <label for="email">Email</label>
-                <input type="email" name="_replyto" id="email" required autocomplete="email" />
+                <input type="email" name="_replyto" id="email" required autocomplete="email" inputmode="email" />
                 <label for="message">Message</label>
-                <textarea name="message" id="message" required></textarea>
+                <textarea name="message" id="message" required minlength="10"></textarea>
                 <div class="form-actions">
                     <button type="submit" id="contactSubmit" class="btn">Send</button>
                     <div id="formStatus" role="status" aria-live="polite"></div>
@@ -225,12 +400,13 @@ Built using Python, OpenCV, MediaPipe, and Pygame, it combines computer vision w
             </form>
         </div>
     </section>
+    </main>
 
     <footer class="footer" aria-label="Social media links and copyright information">
         <div class="container">
             <p>&copy; <span id="current-year"></span> Adwaid P. All rights reserved.</p>
             <section class="social-buttons" aria-label="Connect with Adwaid P on social media">
-                <a href="https://www.linkedin.com/in/adwaidp/" class="social-btn linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/adwaid-p-98354a322/" class="social-btn linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
                 <a href="https://github.com/adwaidp23" class="social-btn github" target="_blank" rel="noopener noreferrer" aria-label="GitHub">

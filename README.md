@@ -1,35 +1,50 @@
-# Minimalist Interactive Portfolio Website
+# Adwaid Portfolio
 
-A clean, interactive portfolio template built with HTML5, CSS3, and JavaScript.
+A static personal portfolio focused on Data Science, AI, and Web Development projects.
 
-## Features
+## Project Structure
 
-- Minimalist design with modern typography and whitespace
-- Interactive project cards and navigation
-- Fixed navigation menu
-- Portfolio, About, and Contact sections
-- Responsive for all devices
-- Dark mode toggle
-- Downloadable resume
-- Well-commented code
+```text
+portfolio/
++-- index.html                  # Home page (hero, skills, featured projects, contact)
++-- projects/
+¦   +-- index.html              # All projects page
+¦   +-- beatbuff.html           # Case study
+¦   +-- demand-forecasting.html # Case study
+¦   +-- ipl-auction-analysis.html # Case study
+¦   +-- assent.html             # Case study
++-- css/
+¦   +-- styles.css              # Shared styles for all pages
++-- js/
+¦   +-- script.js               # Navigation, animations, form logic
++-- assets/
+¦   +-- profile.jpeg            # Profile image
+¦   +-- resume.pdf              # Resume download file
++-- robots.txt
++-- sitemap.xml
+```
 
-## Setup
+## Run Locally
 
-1. Replace `profile.jpg` and `resume.pdf` in the `assets` folder with your own.
-2. Add your projects to the Portfolio section in `index.html`.
-3. Update your name, bio, skills, and contact info.
-4. Deploy to GitHub Pages, Vercel, or Netlify.
+1. Open `index.html` directly in a browser, or
+2. Use a local server (recommended), for example:
+
+```powershell
+python -m http.server 5500
+```
+
+Then open `http://localhost:5500`.
+
+## Update Content
+
+- Edit profile/about/skills in `index.html`
+- Edit project cards in `index.html` and `projects/index.html`
+- Edit detailed case studies in files under `projects/`
+- Update theme/layout in `css/styles.css`
 
 ## Deployment
 
-- **GitHub Pages**: Push to a repository and enable Pages in settings.
-- **Vercel/Netlify**: Drag and drop the folder or connect your repo.
+Optimized for GitHub Pages with base path:
+`https://adwaidp23.github.io/portfolio/`
 
-## Customization
-
-- Change colors and fonts in `css/styles.css` using CSS variables.
-- Add more projects by duplicating the `.project-card` block.
-
-## License
-
-MIT
+If the domain/path changes, update canonicals and sitemap URLs.
