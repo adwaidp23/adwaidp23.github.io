@@ -63,7 +63,16 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     updateActiveNavLink();
-    window.addEventListener('scroll', updateActiveNavLink, { passive: true });
+    
+    const navbarWrapper = document.querySelector('.navbar-wrapper');
+    const handleScroll = () => {
+        updateActiveNavLink();
+        if (navbarWrapper) {
+            navbarWrapper.classList.toggle('scrolled', window.scrollY > 50);
+        }
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
     window.addEventListener('resize', updateActiveNavLink);
 
     const navToggle = document.querySelector('.nav-toggle');
@@ -121,6 +130,25 @@ document.addEventListener('DOMContentLoaded', () => {
                 formStatus.textContent = '';
                 formStatus.classList.remove('form-status-success', 'form-status-error');
             }, 6000);
+        });
+    }
+
+    // Scroll to Top Button
+    const scrollTopBtn = document.getElementById('scrollTopBtn');
+    if (scrollTopBtn) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                scrollTopBtn.classList.add('show');
+            } else {
+                scrollTopBtn.classList.remove('show');
+            }
+        });
+        
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
         });
     }
 });

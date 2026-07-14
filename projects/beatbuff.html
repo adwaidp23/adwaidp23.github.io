@@ -3,129 +3,146 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BeatBuff Case Study | Adwaid P</title>
+    <title>AI Music Recommendation System | BeatBuff | Adwaid P</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=DM+Sans:wght@400;500;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=DM+Sans:wght@400;500;700&display=swap" /></noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/styles.css" />
 
-    <meta name="description" content="Case study of BeatBuff, an AI-based music recommendation system built with Python and similarity-based recommendation algorithms." />
+    <meta name="description" content="BeatBuff is an AI-based music recommendation system utilizing Python, Pandas, and Data Analytics by Adwaid P." />
+    <meta name="keywords" content="Recommendation System, Machine Learning, AI, Python, Pandas, Data Analytics, Artificial Intelligence" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#0D0D0D" />
     <link rel="canonical" href="https://adwaidp23.github.io/portfolio/projects/beatbuff.html" />
-    <meta property="og:title" content="BeatBuff Case Study | Adwaid P" />
-    <meta property="og:description" content="How BeatBuff was built: data pipeline, feature extraction, recommendation logic, and results." />
-    <meta property="og:image" content="https://adwaidp23.github.io/portfolio/assets/profile.jpeg" />
+    
+    <meta property="og:title" content="AI Music Recommendation System | BeatBuff | Adwaid P" />
+    <meta property="og:description" content="BeatBuff is an AI-based music recommendation system utilizing Python and Data Analytics by Adwaid P." />
+    <meta property="og:image" content="https://adwaidp23.github.io/portfolio/assets/projects/beatbuff.png" />
     <meta property="og:url" content="https://adwaidp23.github.io/portfolio/projects/beatbuff.html" />
     <meta property="og:type" content="article" />
+    
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="BeatBuff Case Study | Adwaid P" />
-    <meta name="twitter:description" content="End-to-end breakdown of the BeatBuff recommendation project." />
-    <meta name="twitter:image" content="https://adwaidp23.github.io/portfolio/assets/profile.jpeg" />
+    <meta name="twitter:title" content="AI Music Recommendation System | BeatBuff | Adwaid P" />
+    <meta name="twitter:description" content="BeatBuff is an AI-based music recommendation system utilizing Python and Data Analytics." />
+    <meta name="twitter:image" content="https://adwaidp23.github.io/portfolio/assets/projects/beatbuff.png" />
+
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "TechArticle",
-      "headline": "BeatBuff Case Study",
+      "@type": "CreativeWork",
+      "name": "BeatBuff AI Music Recommendation System",
       "author": {
         "@type": "Person",
         "name": "Adwaid P"
       },
       "url": "https://adwaidp23.github.io/portfolio/projects/beatbuff.html",
-      "about": ["Recommendation System", "Data Science", "Python", "AI"]
+      "description": "BeatBuff is an AI-based music recommendation system that suggests personalized songs by analyzing listening patterns and audio feature similarity.",
+      "keywords": "Artificial Intelligence, Recommendation System, Machine Learning, Python, Data Analytics"
     }
     </script>
 </head>
-<body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-    <header class="navbar">
-        <div class="container">
-            <h1 class="logo"><a href="../index.html">Adwaid <span>P</span></a></h1>
-            <nav aria-label="Main navigation">
-                <ul class="nav-menu" id="nav-menu">
-                    <li><a href="../index.html#home">Home</a></li>
-                    <li><a href="../index.html#projects" class="active">Projects</a></li>
-                    <li><a href="../index.html#contact">Contact</a></li>
-                </ul>
-                <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="burger-icon"></span>
-                </button>
-            </nav>
-        </div>
+<body class="bg-projects">
+    
+    <header class="navbar-wrapper">
+        <nav class="navbar" aria-label="Main navigation">
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="../index.html#home"><span class="nav-icon"></span> Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#projects" class="nav-active">Projects</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="burger-icon"></span>
+            </button>
+        </nav>
     </header>
 
     <main id="main-content">
-        <section class="projects fade-in">
-            <div class="container case-study">
-                <div class="back-link-container">
-                    <a href="../index.html#projects" class="back-btn" aria-label="Back to featured projects"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+        <section class="case-study-section">
+            <div class="container">
+                <div class="case-study-header-layout">
+                    <div class="case-study-hero">
+                        <a href="../index.html#projects" class="btn btn-ghost" style="margin-bottom: 30px; display: inline-block;"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+                        <h1 class="case-study-title">BeatBuff</h1>
+                        <div class="case-study-meta">
+                            <span>Recommendation System</span>
+                            <span>Data Science</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                    <div class="case-study-image-wrapper">
+                        <img src="../assets/projects/beatbuff.png" alt="BeatBuff AI Music Recommendation System" class="case-study-image">
+                    </div>
                 </div>
 
-                <h2>BeatBuff Case Study</h2>
-                <p class="case-lead">BeatBuff is an AI-based music recommendation system that suggests personalized songs by analyzing listening patterns and audio feature similarity.</p>
+                <div class="case-study-layout">
+                    <div class="case-study-content">
+                        <p class="case-lead">BeatBuff is an AI-based music recommendation system that suggests personalized songs by analyzing listening patterns and audio feature similarity.</p>
+                        
+                        <div class="case-study-body">
+                            <h2>Problem</h2>
+                            <p>Users often spend too much time searching for the next track. The project goal was to reduce this friction with fast, relevant recommendations from historical listening preferences.</p>
 
-                <article class="case-block">
-                    <h3>Problem</h3>
-                    <p>Users often spend too much time searching for the next track. The project goal was to reduce this friction with fast, relevant recommendations from historical listening preferences.</p>
-                </article>
+                            <h2>Approach</h2>
+                            <ul>
+                                <li>Collected and cleaned music metadata and audio feature fields</li>
+                                <li>Engineered a normalized feature vector for each track</li>
+                                <li>Calculated nearest-neighbor style similarity for top-N recommendations</li>
+                                <li>Validated recommendation quality by manual relevance checks and iterative tuning</li>
+                            </ul>
 
-                <article class="case-block">
-                    <h3>Tech Stack</h3>
-                    <ul class="project-points">
-                        <li>Python for data processing and model logic</li>
-                        <li>Pandas and NumPy for feature preparation</li>
-                        <li>Similarity-based recommendation pipeline</li>
-                        <li>Matplotlib for exploratory diagnostics</li>
-                    </ul>
-                </article>
+                            <h2>Results</h2>
+                            <ul>
+                                <li>Improved recommendation consistency after feature normalization</li>
+                                <li>Reduced irrelevant suggestions through tuning and filtering</li>
+                                <li>Produced a reusable pipeline for future model upgrades</li>
+                            </ul>
 
-                <article class="case-block">
-                    <h3>Approach</h3>
-                    <ul class="project-points">
-                        <li>Collected and cleaned music metadata and audio feature fields</li>
-                        <li>Engineered a normalized feature vector for each track</li>
-                        <li>Calculated nearest-neighbor style similarity for top-N recommendations</li>
-                        <li>Validated recommendation quality by manual relevance checks and iterative tuning</li>
-                    </ul>
-                </article>
-
-                <article class="case-block">
-                    <h3>Results</h3>
-                    <ul class="project-points">
-                        <li>Improved recommendation consistency after feature normalization</li>
-                        <li>Reduced irrelevant suggestions through tuning and filtering</li>
-                        <li>Produced a reusable pipeline for future model upgrades</li>
-                    </ul>
-                </article>
-
-                <article class="case-block">
-                    <h3>Challenges and Solutions</h3>
-                    <ul class="project-points">
-                        <li>Cold-start behavior for new users was handled with popularity-biased fallback picks</li>
-                        <li>Feature imbalance was handled by scaling and selective weighting</li>
-                        <li>Noise in metadata was reduced with cleaning and rule-based filters</li>
-                    </ul>
-                </article>
-
-                <article class="case-block">
-                    <h3>Project Links</h3>
-                    <div class="case-actions">
-                        <a href="https://github.com/adwaidp23/BeatBuff" class="btn" target="_blank" rel="noopener noreferrer" aria-label="Open BeatBuff GitHub repository">
-                            <i class="fab fa-github"></i> GitHub Repository
-                        </a>
-                        <a href="index.html" class="btn btn-ghost" aria-label="View all projects">View All Projects</a>
+                            <h2>Challenges and Solutions</h2>
+                            <ul>
+                                <li>Cold-start behavior for new users was handled with popularity-biased fallback picks</li>
+                                <li>Feature imbalance was handled by scaling and selective weighting</li>
+                                <li>Noise in metadata was reduced with cleaning and rule-based filters</li>
+                            </ul>
+                        </div>
                     </div>
-                </article>
+
+                    <aside class="case-study-sidebar">
+                        <div class="case-study-sidebar-card">
+                            <h3>Tech Stack</h3>
+                            <ul class="tech-stack-list">
+                                <li>Python</li>
+                                <li>Pandas</li>
+                                <li>NumPy</li>
+                                <li>Matplotlib</li>
+                            </ul>
+                        </div>
+                        <div class="case-study-sidebar-card">
+                            <h3>Project Links</h3>
+                            <div class="case-study-actions" style="margin-top: 0; display: flex; flex-direction: column; gap: 15px;">
+                                <a href="https://github.com/adwaidp23/BeatBuff" class="btn btn-premium" target="_blank" rel="noopener noreferrer" style="width: 100%;">
+                                    <i class="fab fa-github"></i> GitHub Repository
+                                </a>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer" aria-label="Footer">
+    <footer class="site-footer bg-ink">
         <div class="container">
-            <p>&copy; <span id="current-year"></span> Adwaid P. All rights reserved.</p>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Adwaid P. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
         </div>
     </footer>
 

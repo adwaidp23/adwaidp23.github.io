@@ -3,212 +3,179 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>All Projects | Adwaid P</title>
+    <title>Data Science Projects | Machine Learning & EDA | Adwaid P</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=DM+Sans:wght@400;500;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=DM+Sans:wght@400;500;700&display=swap" /></noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/styles.css" />
 
-    <meta name="description" content="Explore all the projects developed by Adwaid P in Data Science, AI, and Web Development." />
-    <meta name="keywords" content="Adwaid P Projects, Data Science Projects, AI Projects, Web Development Projects" />
+    <meta name="description" content="Explore data analytics projects by Adwaid P, featuring Time Series Forecasting, Exploratory Data Analysis (EDA), and Machine Learning models using Python." />
+    <meta name="keywords" content="Adwaid P Projects, Data Science Projects, Machine Learning, Data Analysis, Python, SQL, Power BI, EDA, Time Series Forecasting, Predictive Modeling" />
     <meta name="author" content="Adwaid P" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
-    <meta name="theme-color" content="#0b1220" />
+    <meta name="theme-color" content="#0D0D0D" />
     <link rel="canonical" href="https://adwaidp23.github.io/portfolio/projects/" />
-    <meta property="og:title" content="All Projects | Adwaid P" />
-    <meta property="og:description" content="Explore all projects by Adwaid P across Data Science, AI, and Web Development." />
+    
+    <meta property="og:title" content="Data Science Projects | Machine Learning & EDA | Adwaid P" />
+    <meta property="og:description" content="Explore data analytics projects by Adwaid P, featuring Time Series Forecasting, Exploratory Data Analysis (EDA), and Machine Learning models using Python." />
     <meta property="og:image" content="https://adwaidp23.github.io/portfolio/assets/profile.jpeg" />
     <meta property="og:url" content="https://adwaidp23.github.io/portfolio/projects/" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_US" />
+    
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="All Projects | Adwaid P" />
-    <meta name="twitter:description" content="Complete project portfolio by Adwaid P." />
+    <meta name="twitter:title" content="Data Science Projects | Machine Learning & EDA | Adwaid P" />
+    <meta name="twitter:description" content="Explore data analytics projects by Adwaid P, featuring Time Series Forecasting, EDA, and Machine Learning models using Python." />
     <meta name="twitter:image" content="https://adwaidp23.github.io/portfolio/assets/profile.jpeg" />
+
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "CollectionPage",
-      "name": "All Projects | Adwaid P",
+      "name": "Data Science & Machine Learning Projects by Adwaid P",
       "url": "https://adwaidp23.github.io/portfolio/projects/",
-      "description": "Project collection featuring Data Science, AI, and Web Development work by Adwaid P."
+      "description": "Portfolio of Data Analysis, Machine Learning, and Predictive Modeling projects.",
+      "author": {
+        "@type": "Person",
+        "name": "Adwaid P"
+      }
     }
     </script>
 </head>
-<body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-    <header class="navbar">
-        <div class="container">
-            <h1 class="logo"><a href="../index.html">Adwaid <span>P</span></a></h1>
-            <nav aria-label="Main navigation">
-                <ul class="nav-menu" id="nav-menu">
-                    <li><a href="../index.html#home">Home</a></li>
-                    <li><a href="../index.html#about">About</a></li>
-                    <li><a href="../index.html#education">Education</a></li>
-                    <li><a href="../index.html#certifications">Certifications</a></li>
-                    <li><a href="../index.html#skills">Skills</a></li>
-                    <li><a href="../index.html#projects" class="active">Projects</a></li>
-                    <li><a href="../index.html#contact">Contact</a></li>
-                </ul>
-                <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="burger-icon"></span>
-                </button>
-            </nav>
-        </div>
+<body class="bg-projects">
+    
+    <header class="navbar-wrapper">
+        <nav class="navbar" aria-label="Main navigation">
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="../index.html#home"><span class="nav-icon"></span> Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#projects" class="nav-active">Projects</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="burger-icon"></span>
+            </button>
+        </nav>
     </header>
 
     <main id="main-content">
-    <section id="full-projects" class="projects fade-in" aria-labelledby="all-projects-heading">
-        <div class="container">
-            <div class="back-link-container">
-                <a href="../index.html#projects" class="back-btn" aria-label="Go back to the main portfolio projects section"><i class="fas fa-arrow-left"></i> Back to Home</a>
-            </div>
-            <h2 id="all-projects-heading">All Projects</h2>
-
-            <div class="project-grid full-grid">
-                <div class="project-card">
-                    <h3>Demand Forecasting System using Time Series AI</h3>
-                    <p class="project-type">Data Science Project</p>
-                    <p>Developed an end-to-end demand forecasting system to predict future sales using ARIMA and Prophet models.</p>
-                    <ul class="project-points">
-                        <li>Conducted time series analysis to identify trends, seasonality, and anomalies</li>
-                        <li>Engineered lag features and rolling averages to improve model performance</li>
-                        <li>Built and evaluated models using MAE and RMSE metrics</li>
-                        <li>Visualized forecasts and insights using Python libraries</li>
-                    </ul>
-                    <span class="tech-tags">Python, ARIMA, Prophet, Time Series, Forecasting</span>
-                    <div class="project-actions">
-                        <a href="https://github.com/adwaidp23/Market-Data-Analytics" target="_blank" rel="noopener noreferrer" aria-label="View Demand Forecasting System project on GitHub">
-                            <i class="fab fa-github"></i> View on GitHub
-                        </a>
-                        <a href="demand-forecasting.html" aria-label="View demand forecasting case study">
-                            <i class="fas fa-file-lines"></i> View Case Study
-                        </a>
+        <section class="projects-section bg-ink" style="padding-top: 160px; min-height: 100vh;">
+            <div class="container">
+                <div class="projects-header">
+                    <div class="projects-header-left">
+                        <a href="../index.html#projects" class="btn btn-ghost" style="margin-bottom: 30px; display: inline-block;"><i class="fas fa-arrow-left"></i> Back to Home</a>
+                        <h2 class="projects-title">Data Science & AI Portfolio</h2>
+                        <p class="projects-desc">Explore my complete portfolio of work across Predictive Modeling, Machine Learning, and Data Analytics.</p>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <h3>AI-Powered IPL Auction Analysis &amp; Price Prediction System</h3>
-                    <p class="project-type">Data Science / Machine Learning Project</p>
-                    <p>Built a machine learning system to analyze IPL auction data and predict player valuations from historical patterns.</p>
-                    <ul class="project-points">
-                        <li>Performed EDA to uncover player pricing trends and team spending patterns</li>
-                        <li>Engineered features for predictive modeling</li>
-                        <li>Built models to estimate player auction prices</li>
-                        <li>Visualized insights using Matplotlib and Seaborn</li>
-                    </ul>
-                    <span class="tech-tags">Python, EDA, Machine Learning, Matplotlib, Seaborn</span>
-                    <div class="project-actions">
-                        <a href="https://github.com/adwaidp23/ipl-data-science-project" target="_blank" rel="noopener noreferrer" aria-label="View IPL data science project on GitHub">
-                            <i class="fab fa-github"></i> View on GitHub
-                        </a>
-                        <a href="ipl-auction-analysis.html" aria-label="View IPL auction analysis case study">
-                            <i class="fas fa-file-lines"></i> View Case Study
-                        </a>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-item">
+                        <div class="project-mockup">
+                            <img src="../assets/projects/demand_forecasting.png" alt="Demand Forecasting Dashboard" class="project-img">
+                            <div class="project-overlay">
+                                <p>Developed an end-to-end demand forecasting system to predict future sales using ARIMA and Prophet models.</p>
+                                <div class="project-links">
+                                    <a href="https://github.com/adwaidp23/Market-Data-Analytics" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                    <a href="demand-forecasting.html" aria-label="Case Study"><i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="project-name">Demand Forecasting</h3>
+                        <p class="project-meta">Data Science • Time Series AI</p>
                     </div>
-                </div>
-
-                <div class="project-card">
-                    <h3>BeatBuff - AI-Based Music Recommendation System</h3>
-                    <p class="project-type">Data Science / AI Project</p>
-                    <p>Built a music recommendation system that analyzes user preferences and audio features to deliver personalized suggestions.</p>
-                    <ul class="project-points">
-                        <li>Processed music datasets and extracted relevant features</li>
-                        <li>Implemented similarity-based recommendation algorithms</li>
-                        <li>Improved recommendation accuracy through model tuning</li>
-                    </ul>
-                    <span class="tech-tags">Python, Recommendation Systems, AI, Data Science</span>
-                    <div class="project-actions">
-                        <a href="https://github.com/adwaidp23/BeatBuff" target="_blank" rel="noopener noreferrer" aria-label="View BeatBuff project on GitHub">
-                            <i class="fab fa-github"></i> View on GitHub
-                        </a>
-                        <a href="beatbuff.html" aria-label="View BeatBuff case study">
-                            <i class="fas fa-file-lines"></i> View Case Study
-                        </a>
+                    <!-- Project 2 -->
+                    <div class="project-item">
+                        <div class="project-mockup">
+                            <img src="../assets/projects/ipl_auction.png" alt="IPL Auction Analysis Dashboard" class="project-img">
+                            <div class="project-overlay">
+                                <p>Built a machine learning system to analyze IPL auction data, identify pricing patterns, and predict player valuations.</p>
+                                <div class="project-links">
+                                    <a href="https://github.com/adwaidp23/ipl-data-science-project" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                    <a href="ipl-auction-analysis.html" aria-label="Case Study"><i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="project-name">IPL Auction Analysis</h3>
+                        <p class="project-meta">Machine Learning • Price Prediction</p>
                     </div>
-                </div>
-
-                <div class="project-card">
-                    <h3>Assent - Privacy-Focused Photo Sharing Web Application</h3>
-                    <p class="project-type">Academic Project</p>
-                    <p>Developed a privacy-focused web app enabling controlled photo sharing with identity-based access.</p>
-                    <ul class="project-points">
-                        <li>Designed secure authentication and access control system</li>
-                        <li>Applied data-driven logic for identity-based content visibility</li>
-                    </ul>
-                    <span class="tech-tags">Web App, Authentication, Access Control, Privacy</span>
-                    <div class="project-actions">
-                        <a href="https://github.com/adwaidp23/Assent" target="_blank" rel="noopener noreferrer" aria-label="View Assent project on GitHub">
-                            <i class="fab fa-github"></i> View on GitHub
-                        </a>
-                        <a href="assent.html" aria-label="View Assent case study">
-                            <i class="fas fa-file-lines"></i> View Case Study
-                        </a>
+                    <!-- Project 3 -->
+                    <div class="project-item">
+                        <div class="project-mockup">
+                            <img src="../assets/projects/beatbuff.png" alt="BeatBuff Music Recommendation System" class="project-img">
+                            <div class="project-overlay">
+                                <p>Built a recommendation system that analyzes user preferences and audio features to deliver personalized song suggestions.</p>
+                                <div class="project-links">
+                                    <a href="https://github.com/adwaidp23/BeatBuff" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                    <a href="beatbuff.html" aria-label="Case Study"><i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="project-name">BeatBuff</h3>
+                        <p class="project-meta">Data Science • Recommendation System</p>
                     </div>
-                </div>
-
-                <div class="project-card">
-                    <h3>Movie Recommendation System</h3>
-                    <p>Built a recommendation app using TMDB API and Streamlit with genre-aware suggestions and smooth browsing.</p>
-                    <span class="tech-tags">Python, TMDB API, Streamlit, Data Science</span>
-                    <div class="project-actions">
-                        <a href="https://github.com/adwaidp23/movie-recommendation" target="_blank" rel="noopener noreferrer" aria-label="View Movie Recommendation System project on GitHub">
-                            <i class="fab fa-github"></i> View on GitHub
-                        </a>
+                    <!-- Project 4 -->
+                    <div class="project-item">
+                        <div class="project-mockup">
+                            <img src="../assets/projects/assent.png" alt="Assent Privacy Photo Sharing App" class="project-img">
+                            <div class="project-overlay">
+                                <p>Developed a privacy-focused web application enabling controlled photo sharing with identity-based access.</p>
+                                <div class="project-links">
+                                    <a href="https://github.com/adwaidp23/Assent" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                    <a href="assent.html" aria-label="Case Study"><i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="project-name">Assent</h3>
+                        <p class="project-meta">Web App • Privacy</p>
                     </div>
-                </div>
-
-                <div class="project-card">
-                    <h3>Credit Risk Modelling System</h3>
-                    <p class="project-type">Machine Learning / FinTech Project</p>
-                    <p>Built a deployed credit risk platform that predicts borrower default probability, quantifies expected loss, and stress-tests entire loan portfolios.</p>
-                    <ul class="project-points">
-                        <li>Single Borrower engine computing PD &amp; EL from financial inputs in real time</li>
-                        <li>Portfolio stress-testing dashboard with PD multiplier simulation on a $41.6M book</li>
-                        <li>Dynamic-programming FICO bucketing using log-likelihood optimisation</li>
-                    </ul>
-                    <span class="tech-tags">Python, Scikit-learn, Logistic Regression, Dynamic Programming, Plotly, Streamlit</span>
-                    <div class="project-actions">
-                        <a href="https://adwaidp23-credit-risk-modeling-app.streamlit.app/" target="_blank" rel="noopener noreferrer" aria-label="View Credit Risk Modelling live demo">
-                            <i class="fas fa-play"></i> Live Demo
-                        </a>
-                        <a href="https://github.com/adwaidp23/credit-risk-modeling" target="_blank" rel="noopener noreferrer" aria-label="View Credit Risk Modelling on GitHub">
-                            <i class="fab fa-github"></i> View on GitHub
-                        </a>
-                        <a href="credit-risk-modeling.html" aria-label="View credit risk modelling case study">
-                            <i class="fas fa-file-lines"></i> View Case Study
-                        </a>
+                    <!-- Project 5 -->
+                    <div class="project-item">
+                        <div class="project-mockup">
+                            <img src="../assets/projects/credit_risk.png" alt="Credit Risk Modelling Dashboard" class="project-img">
+                            <div class="project-overlay">
+                                <p>Built a deployed credit risk platform that predicts borrower default probability and stress-tests loan portfolios.</p>
+                                <div class="project-links">
+                                    <a href="https://adwaidp23-credit-risk-modeling-app.streamlit.app/" target="_blank" aria-label="Live Demo"><i class="fas fa-play"></i></a>
+                                    <a href="https://github.com/adwaidp23/credit-risk-modeling" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                    <a href="credit-risk-modeling.html" aria-label="Case Study"><i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="project-name">Credit Risk Modelling</h3>
+                        <p class="project-meta">Machine Learning • FinTech</p>
+                    </div>
+                    <!-- Project 6 (Movie Recommendation) -->
+                    <div class="project-item">
+                        <div class="project-mockup" style="background-color: #1e3c72;">
+                            <div class="project-overlay" style="opacity: 1;">
+                                <p>Built a recommendation app using TMDB API and Streamlit with genre-aware suggestions and smooth browsing.</p>
+                                <div class="project-links">
+                                    <a href="https://github.com/adwaidp23/movie-recommendation" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="project-name">Movie Recommendation</h3>
+                        <p class="project-meta">Python • TMDB API • Streamlit</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
     </main>
 
-    <footer class="footer" aria-label="Social media links and copyright information">
+    <footer class="site-footer bg-ink">
         <div class="container">
-            <p>&copy; <span id="current-year-full"></span> Adwaid P. All rights reserved.</p>
-            <section class="social-buttons" aria-label="Connect with Adwaid P on social media">
-                <a href="https://www.linkedin.com/in/adwaid-p-98354a322/" class="social-btn linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="https://github.com/adwaidp23" class="social-btn github" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://instagram.com/a_dwai_d" class="social-btn instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://wa.me/918075801015" class="social-btn whatsapp" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
-                <a href="https://facebook.com/adwaidp" class="social-btn facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-            </section>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Adwaid P. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
         </div>
     </footer>
 
