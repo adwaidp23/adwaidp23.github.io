@@ -1,50 +1,29 @@
-# Adwaid Portfolio
+# Adwaidp23.Github.Io
 
-A static personal portfolio focused on Data Science, AI, and Web Development projects.
+## Project Overview
+A professional Data Science/Analytics project: adwaidp23.github.io.
 
-## Project Structure
+This repository is a part of my Data Analyst/Data Scientist portfolio. It demonstrates my ability to handle complex data, build robust models, and derive actionable insights.
 
-```text
-portfolio/
-+-- index.html                  # Home page (hero, skills, featured projects, contact)
-+-- projects/
-¦   +-- index.html              # All projects page
-¦   +-- beatbuff.html           # Case study
-¦   +-- demand-forecasting.html # Case study
-¦   +-- ipl-auction-analysis.html # Case study
-¦   +-- assent.html             # Case study
-+-- css/
-¦   +-- styles.css              # Shared styles for all pages
-+-- js/
-¦   +-- script.js               # Navigation, animations, form logic
-+-- assets/
-¦   +-- profile.jpeg            # Profile image
-¦   +-- resume.pdf              # Resume download file
-+-- robots.txt
-+-- sitemap.xml
+## Features
+- End-to-end data processing pipeline
+- Exploratory Data Analysis (EDA)
+- Robust modeling and predictive analytics
+
+## Tech Stack
+- **Languages:** Python / SQL
+- **Libraries:** Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn
+- **Tools:** Jupyter Notebooks, Git
+
+## Installation
+```bash
+git clone https://github.com/adwaidp23/adwaidp23.github.io.git
+cd adwaidp23.github.io
+pip install -r requirements.txt
 ```
 
-## Run Locally
+## Usage
+Run the main scripts or Jupyter notebooks to see the analysis in action.
 
-1. Open `index.html` directly in a browser, or
-2. Use a local server (recommended), for example:
-
-```powershell
-python -m http.server 5500
-```
-
-Then open `http://localhost:5500`.
-
-## Update Content
-
-- Edit profile/about/skills in `index.html`
-- Edit project cards in `index.html` and `projects/index.html`
-- Edit detailed case studies in files under `projects/`
-- Update theme/layout in `css/styles.css`
-
-## Deployment
-
-Optimized for GitHub Pages with base path:
-`https://adwaidp23.github.io/portfolio/`
-
-If the domain/path changes, update canonicals and sitemap URLs.
+## License
+MIT License
